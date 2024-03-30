@@ -7,7 +7,3 @@
   --font-family: "Bai Jamjuree", sans-serif;
   --font-size: 18px;
 }
-body {
-  background-color: var(--color-neutral-grayish-blue);
-  display: flex;
-}
