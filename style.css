@@ -1,9 +1,194 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 :root {
+  /*colors*/
   --color-primary-strong-cyan: hsl(171, 66%, 44%);
   --color-primary-light-blue: hsl(233, 100%, 69%);
   --color-neutral-dark-grayish-blue: hsl(210, 10%, 33%);
   --color-neutral-grayish-blue: hsl(201, 11%, 66%);
+  /*font*/
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
   --font-family: "Bai Jamjuree", sans-serif;
   --font-size: 18px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+}
+img {
+  max-width: 100%;
+}
+body {
+  display: grid;
+  gap: 60px;
+}
+.picture {
+  position: absolute;
+  width: 100%;
+}
+.bg-head-picture img {
+  width: 100%;
+}
+.sec_one {
+  margin-top: 100px;
+  display: grid;
+  place-items: center;
+  gap: 35px;
+}
+.big-logo > img {
+  width: 120px;
+}
+.article_one {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-dark-grayish-blue);
+  margin-bottom: 15px;
+}
+h2 {
+  text-align: center;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-dark-grayish-blue);
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+p {
+  color: var(--color-neutral-grayish-blue);
+  line-height: 1.9;
+}
+.article_one > p {
+  margin: auto 430px auto 430px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+ul > li {
+  display: inline;
+  list-style-type: none;
+}
+button {
+  border: none;
+  width: 200px;
+  border-radius: 35px;
+  padding: 15px;
+  color: white;
+  font-weight: var(--font-weight-semibold);
+  margin: auto 10px 50px 10px;
+}
+button:hover {
+  cursor: pointer;
+}
+.btn-green {
+  background-color: var(--color-primary-strong-cyan);
+  box-shadow: 0 2px 1px hsl(171, 66%, 30%),
+    0 3px 10px var(--color-primary-strong-cyan);
+}
+.btn-blue {
+  background-color: var(--color-primary-light-blue);
+}
+.sec_two > p {
+  margin: auto 380px auto 380px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.sec_two > .features {
+  margin: 50px auto 70px;
+  display: inline-flex;
+}
+.sec_two > .features > .features__list {
+  padding: 60px 125px;
+}
+.sec_two > .features > .features__list > article > h3 {
+  color: var(--color-neutral-dark-grayish-blue);
+  font-size: 25px;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 15px;
+}
+.sec_two > .features > .features__list > article > p {
+  margin-bottom: 65px;
+}
+.sec_three {
+  display: grid;
+  place-items: center;
+}
+.sec_three > p {
+  margin: auto 380px auto 380px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.sec_four > p {
+  text-align: center;
+}
+.sec_four > .article_four {
+  display: inline-flex;
+  padding: 40px 40px 40px 0px;
+  justify-content: center;
+  margin-left: 0px;
+}
+.sec_four > .article_four > div {
+  display: grid;
+  place-items: center;
+  padding: 60px;
+  padding-left: 20px;
+}
+.sec_four > .article_four > div > h3 {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-dark-grayish-blue);
+  margin-bottom: 15px;
+}
+.sec_four > .article_four > div > p {
+  text-align: center;
+  padding-left: 0px;
+}
+
+.sec_four > .article_four > div > img {
+  margin-bottom: 35px;
+}
+.sec_five {
+  display: inline-flex;
+  margin-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.sec_five > ul > li {
+  margin-left: 120px;
+  align-items: center;
+  justify-content: center;
+}
+.sec_six {
+  display: grid;
+  place-items: center;
+}
+.sec_six > p {
+  text-align: center;
+  margin: auto 480px auto 480px;
+  margin-bottom: 45px;
+}
+footer {
+  background-color: #f5f6f8;
+}
+footer > article {
+  display: inline-flex;
+  background-color: #f5f6f8;
+  padding: 80px;
+}
+footer > article > * {
+  margin-right: 170px;
+}
+footer > article > ul {
+  display: grid;
+}
+footer > article > ul > li {
+  color: var(--color-neutral-dark-grayish-blue);
+  font-weight: var(--font-weight-regular);
 }
