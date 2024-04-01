@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 :root {
   /*colors*/
+  /*colors*/
   --color-primary-strong-cyan: hsl(171, 66%, 44%);
   --color-primary-light-blue: hsl(233, 100%, 69%);
   --color-neutral-dark-grayish-blue: hsl(210, 10%, 33%);
   --color-neutral-grayish-blue: hsl(201, 11%, 66%);
+  /*font*/
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
   /*font*/
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
