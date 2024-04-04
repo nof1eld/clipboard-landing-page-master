@@ -82,11 +82,12 @@ ul > li {
 }
 button {
   border: none;
-  width: 210px;
+  width: 220px;
   border-radius: 35px;
   padding: 15px;
   color: white;
   font-weight: var(--font-weight-semibold);
+  font-size: 19px;
   margin: auto 10px 50px 10px;
 }
 button:hover {
@@ -202,7 +203,6 @@ button:hover {
 footer {
   background-color: rgba(159, 171, 178, 0.2);
   padding: 2rem 1.5rem;
-  
 }
 footer > article {
   display: flex;
@@ -251,10 +251,10 @@ footer > article > .social > li:hover {
 @media screen and (max-width: 768px) {
   body {
     place-content: center;
-width: 100vw;
+    width: 100vw;
     text-align: center;
   }
- 
+
   .article_one {
     text-align: center;
   }
@@ -286,19 +286,19 @@ width: 100vw;
   .sec_two > p {
     width: 70vw;
   }
-
-  .sec_two > .features {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(0, 0fr);
-    gap: 0rem;
-    width: 70vw;
+  .sec_two {
     text-align: center;
+    place-content: center;
+  }
+  .sec_two > .features {
+    position: none;
+    display: block;
   }
 
   .sec_two > .features > article > img {
-    position: static;
-    width: 100%;
+    position: inherit;
+    text-align: center;
+    width: 80vw;
   }
   .sec_two > .features > article {
     text-align: center;
@@ -324,7 +324,7 @@ width: 100vw;
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  footer{
+  footer {
     width: 100%;
   }
   footer > article {
@@ -344,6 +344,8 @@ width: 100vw;
     display: block;
   }
   button {
-    width: 370px;
+    margin-bottom: 40px;
+    width: 350px;
+    height: 60px;
   }
 }
