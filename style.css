@@ -26,6 +26,7 @@
 body {
   display: grid;
   gap: 60px;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -70,7 +71,7 @@ p {
   line-height: 1.9;
 }
 .article_one > p {
-  margin: auto 430px auto 430px;
+  width: 650px;
   margin-bottom: 45px;
   text-align: center;
 }
@@ -81,7 +82,7 @@ ul > li {
 }
 button {
   border: none;
-  width: 200px;
+  width: 210px;
   border-radius: 35px;
   padding: 15px;
   color: white;
@@ -107,9 +108,12 @@ button:hover {
 .btn-blue:hover {
   background-color: hsl(233, 100%, 73%);
 }
-
+.sec_two {
+  display: grid;
+  place-items: center;
+}
 .sec_two > p {
-  margin: auto 380px auto 380px;
+  width: 650px;
   margin-bottom: 100px;
   text-align: center;
 }
@@ -198,6 +202,7 @@ button:hover {
 footer {
   background-color: rgba(159, 171, 178, 0.2);
   padding: 2rem 1.5rem;
+  
 }
 footer > article {
   display: flex;
@@ -216,6 +221,7 @@ footer > article > .links {
 }
 
 footer > article > .links > ul {
+  font-weight: var(--font-weight-semibold);
   padding: 10rem auto;
   display: grid;
   gap: 25px;
@@ -241,4 +247,103 @@ footer > article > .social > li:hover {
   cursor: pointer;
   filter: invert(55%) sepia(57%) saturate(515%) hue-rotate(122deg)
     brightness(98%) contrast(92%);
+}
+@media screen and (max-width: 768px) {
+  body {
+    place-content: center;
+width: 100vw;
+    text-align: center;
+  }
+ 
+  .article_one {
+    text-align: center;
+  }
+  h1,
+  h3 {
+    width: 70vw;
+  }
+  h2 {
+    width: 70vw;
+    text-align: center;
+  }
+
+  .picture {
+    width: 100vw;
+  }
+  .picture > img {
+    width: 100vw;
+  }
+  .sec_one {
+    place-content: center;
+  }
+  .sec_one > .article_one > p {
+    width: 70vw;
+  }
+  p {
+    width: 70vw;
+    text-align: center;
+  }
+  .sec_two > p {
+    width: 70vw;
+  }
+
+  .sec_two > .features {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(0, 0fr);
+    gap: 0rem;
+    width: 70vw;
+    text-align: center;
+  }
+
+  .sec_two > .features > article > img {
+    position: static;
+    width: 100%;
+  }
+  .sec_two > .features > article {
+    text-align: center;
+  }
+  .sec_three > img {
+    width: 80vw;
+  }
+
+  .sec_four > .article_four {
+    grid-template-columns: repeat(1, 0fr);
+  }
+  .sec_four > .article_four > div > h3 {
+    text-align: center;
+    width: 100%;
+  }
+  .sec_four > .article_four > div > img {
+    width: 15vw;
+  }
+  .sec_five {
+    text-align: center;
+  }
+  .sec_five ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  footer{
+    width: 100%;
+  }
+  footer > article {
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+  }
+  footer > article > .links {
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  footer > article > .links > ul {
+    gap: 2rem;
+  }
+  ul > li {
+    display: block;
+  }
+  button {
+    width: 370px;
+  }
 }
