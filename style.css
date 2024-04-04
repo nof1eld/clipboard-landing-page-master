@@ -112,6 +112,7 @@ button:hover {
 .sec_two {
   display: grid;
   place-items: center;
+  margin-bottom: 90px;
 }
 .sec_two > p {
   width: 650px;
@@ -291,6 +292,7 @@ footer > article > .social > li:hover {
   .sec_two {
     text-align: center;
     place-content: center;
+    margin-bottom: 20px;
   }
   .sec_two > .features {
     position: none;
