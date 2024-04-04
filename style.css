@@ -129,20 +129,22 @@ button:hover {
 .features > article > img {
   position: absolute;
   top: -1%;
-  left: -9vw;
-  width: 50rem;
+  left: -3vw;
+  width: 40rem;
 }
 .sec_two > .features > .features__list {
   padding: 60px 125px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
+  gap: 1rem;
+  zoom: 80%;
 }
+
 .sec_two > .features > .features__list > article > h3 {
   color: var(--color-neutral-dark-grayish-blue);
   font-size: 25px;
   font-weight: var(--font-weight-semibold);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .sec_two > .features > .features__list > article > p {
   margin-bottom: 65px;
